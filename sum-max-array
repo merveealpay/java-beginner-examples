@@ -1,0 +1,36 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+        //Arrays
+
+        String[] students = new String[3];
+
+        students[0] = "merve";
+        students[1] = "alpay";
+        students[2] = "kumsal";
+
+        for (int i = 0; i < students.length; i++) {
+            System.out.println(students[i]);
+        }
+
+        //find max and sum of list
+
+        double[] myList={1.2,2.8,1.5,3.9,6.8};
+        double sum=0;
+        double max=myList[0];
+        for(double number:myList)
+        {
+            sum=sum+number;
+            if (max<number)
+            {
+                max=number;
+            }
+
+        }
+
+        System.out.println("Sum of myList: " + sum);
+        System.out.println("Max of myList: " + max);
+
+    }
+}
